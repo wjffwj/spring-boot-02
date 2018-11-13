@@ -1,19 +1,19 @@
 
 
 
-#person:
-#  lastName: zhangsan
-#  age: 18
-#  boss: false
-#  birth: 2018/11/13
-#  map: {k1: v1,k2: v2}
-#  list:
-#    - basketball
-#    - football
-#    - baseball
-#  dog:
-#    name: katun
-#    id: 1
+person:
+  lastName: zhangsan
+  age: 18
+  boss: false
+  birth: 2018/11/13
+  map: {k1: v1,k2: v2}
+  list:
+    - basketball
+    - football
+    - baseball
+  dog:
+    name: katun
+    id: 1
 server:
   port: 8081
 spring:

@@ -14,8 +14,9 @@ import java.util.Map;
 //只有这个组件事容器中的组建，才能使用容器中的功能
 @Data
 @Component
-@Validated
-@PropertySource(value={"classpath:person.properties"})
+//@Validated
+// @PropertySource指定加载的properties
+//@PropertySource(value={"classpath:person.properties"})
 @ConfigurationProperties(prefix = "person")
 public class Person {
     //lastName必须是邮箱格式
