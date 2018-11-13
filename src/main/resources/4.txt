@@ -1,0 +1,25 @@
+#profile
+    1.多profile文件  :默认使用application.properties
+
+    如果想切换的话  使用 spring.profiles.active=dev  在application.properties中配置  将应用此application-dev.properties
+
+    2.yml文件文档块 环境区分
+    server:
+      port: 8081
+    spring:
+      profiles:
+        active: dev
+    ---
+    server:
+         port: 8083
+    spring:
+      profiles: test
+    ---
+    server:
+      port: 8084
+    spring:
+      profiles: prod
+
+     3.使用命令行的方式 jar -jar jar_name --spring.profiles.active=dev
+
+     4.虚拟机参数 ：-Dspring.profiles.active=dev

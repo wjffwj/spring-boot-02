@@ -1,6 +1,5 @@
-server:
-  port: 8081
-  path: /hello
+
+
 
 #person:
 #  lastName: zhangsan
@@ -13,5 +12,22 @@ server:
 #    - football
 #    - baseball
 #  dog:
-#    id: 1
 #    name: katun
+#    id: 1
+server:
+  port: 8081
+spring:
+  profiles:
+    active: dev
+
+---
+server:
+     port: 8083
+spring:
+  profiles: test
+
+---
+server:
+  port: 8084
+spring:
+  profiles: prod
