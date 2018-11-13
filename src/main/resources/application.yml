@@ -1,0 +1,12 @@
+server:
+  port: 8081
+  path: /hello
+
+friends:
+  lastName : zhangsan
+  age :20
+
+pets:
+  - cat
+  - pig
+  - dog

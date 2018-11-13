@@ -1,0 +1,11 @@
+快速生成的SpringBoot项目
+    resources文件夹结构：
+            static:保存所有静态资源
+            templates:保存所有模板页面（Springboot 默认jar包使用嵌入式Tomcat,不支持jsp）;可以使用模板引擎（freemarker，thymeleaf）
+            applicationProperties: springboot应用的配置文件
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
