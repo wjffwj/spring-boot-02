@@ -3,6 +3,7 @@ package com.wjf.domain;
 import lombok.Data;
 import org.hibernate.validator.constraints.Email;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 import org.springframework.validation.annotation.Validated;
 
@@ -14,6 +15,7 @@ import java.util.Map;
 @Data
 @Component
 @Validated
+@PropertySource(value={"classpath:person.properties"})
 @ConfigurationProperties(prefix = "person")
 public class Person {
     //lastName必须是邮箱格式
